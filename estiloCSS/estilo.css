@@ -1,0 +1,75 @@
+body{
+    width: 960px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.menu{
+    height: 480px;
+    width: 130px;
+    float: left;
+    padding: 10px 0 10px 5px;
+    list-style: none;
+    border: 2px solid silver;
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 0 0 1em black;
+}
+
+.menu li{
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.conteudo{
+    width: 700px;
+    height: 500px;
+    float: left;
+    margin: 13px 0 0 20px;
+    border: 2px solid silver;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 1em black;
+}
+
+#botao{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: orange;
+}
+
+.produto{
+    width: 200px;
+    height: 150px;
+    float: left;
+    text-align: center;    
+    background-color: orange;
+    margin: 10px 10px 0 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+h2{
+    border-bottom: 2px dotted black;
+}
+
+.bordas{
+    border: 1px dashed gold;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.total{
+    margin: 20px 15px 0 10px;
+}
+
+.footer{
+    width: 860px;
+    height: 70px;
+    float: left;
+    margin-top: 30px;
+    border: 2px solid silver;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 1em black;
+    text-align: center;
+    clear: both;
+}
+
+
