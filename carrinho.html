@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangão Delivery – UNICSUL</title>
+    <link rel="stylesheet" type="text/css" href="estiloCSS/estilo.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/global.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <h1>Menu</h1>
+            <li><a href="index.html">Produtos</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+    </nav>
+
+    <section class="conteudo">
+
+    <button id="botao" type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+
+    <div class="total">
+        <div id="itens"></div>
+        <div><b>Total: </b>R$<span id="total"> </span></div>
+    </div>
+
+    </section>
+
+    <section>
+        <div class="footer">
+            <p>Desenvolvido pelo(s) programador(es):<br>
+                <b>Thiago Fernandes do Nascimento</b> RGM: 23378417<br>
+                <b>Marcelo Cardoso Leandro</b> RGM: 22724061
+            </p>
+        </div>
+
+    </section>
+
+    <script>
+        var total = 0;
+        var i = 0;    
+        var valor = 0;
+        
+        for(i=1; i<=99; i++) 
+        {
+            var prod = localStorage.getItem("produto" + i + ""); 
+            if(prod != null) 
+            {	
+                
+                document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+                document.getElementById("itens").innerHTML += " ";
+                document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+
+                
+                
+                valor = parseFloat(localStorage.getItem("valor" + i)); 
+                total = (total + valor); 
+            }
+        } 
+        
+        document.getElementById("total").innerHTML = total.toFixed(2); 
+       </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+    "produtos": 
+        [
+            {"valor": 69.90, "nome": "Red Label"},
+            {"valor": 109.90, "nome": "Vodka Absolut"},
+            {"valor": 12.50, "nome": "Dogão Completo"},
+            {"valor": 20.00, "nome": "Hamburguer da Casa"},
+            {"valor": 14.00, "nome": "Ceasar"},
+            {"valor": 7.00, "nome": "Laranja"}
+        ]
+}
